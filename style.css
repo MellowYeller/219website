@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+	font-family: 'Noto Serif', serif;
+	background-color: rgb(24, 26, 27);
+	color: rgb(232, 230, 227);
+}
+body {
+	display: grid;
+	grid-template-columns: 1fr, 1fr, 1fr;
+	padding: 40px;
+}
+a {
+	color: rgb(0,213,255);
+}
+header {
+	grid-column: 1;
+	text-align: center;
+}
+header h1 {
+	font-size: 333%;
+}
+.links {
+	text-align: center;
+}
