@@ -6,19 +6,21 @@
 }
 body {
 	display: grid;
-	grid-template-columns: 1fr, 1fr, 1fr;
+	width: 450;
+	justify-content: center;
+	margin: auto;
 	padding: 40px;
 }
 a {
 	color: rgb(0,213,255);
 }
 header {
-	grid-column: 1;
 	text-align: center;
 }
 header h1 {
 	font-size: 333%;
 }
 .links {
-	text-align: center;
+	text-align: left;
+	padding: 0px 50px;
 }
