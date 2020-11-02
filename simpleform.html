@@ -1,0 +1,78 @@
+ <!--
+     Mitchell Vivian
+     300202471
+
+     TODO: JS validation with alert box.
+ -->
+
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            validateForm = () => {
+                let x = document.forms["alertForm"]["name"].value;
+                if (x == "") {
+                    alert("This is an alert! You must fill in your first name in 'Alert Form'.");
+                    return false;
+                }
+            }
+            numberValidate = () => {
+                let x, text;
+                x = document.forms["numberForm"]["number"].value;
+                if (isNaN(x) || x < 1 || x > 10) {
+                    text = `Input "${x}" is not valid. Enter a number between 1 and 10.`;
+                } else {
+                    text = `Input ${x} is valid!`
+                }
+                document.getElementById("numberMessage").innerHTML = text;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="alert form">
+            <form action="" name="alertForm" onsubmit="return validateForm()" method="POST">
+                <fieldset>
+                    <legend>Alert Form</legend>
+                    <p>Enter your first name, then submit:</p>
+                    <label for="name">First name:</label>
+                    <input type="text" id="name" name="name" placeholder="Deb">
+                    <br><br>
+                    <input type="submit" value="Submit Name">
+                    <br>
+                    <p>If you hit 'Submit Name' with an empty field, an alert box will pop up.</p>
+                </fieldset>
+            </form>
+        </div> <!--alert form-->
+        <div class="number form">
+            <form action="" name="numberForm" method="POST">
+                <fieldset>
+                    <legend>Number Form</legend>
+                    <p>How many years have you been at OC? Enter a number between 1 and 10.</p>
+                    <input type="text" id="number" name="number">
+                    <br><br>
+                    <input type="button" onclick="numberValidate()" value="Submit Number">
+                    <p id="numberMessage"></p>
+                </fieldset>
+            </form>
+        </div> <!--number form-->
+        <div class="default form">
+            <form action="" name="defaultForm" method="POST">
+                <fieldset>
+                    <legend>HTML5 Validation</legend>
+                    <p>First and last name is <b>required.</b> If you do not enter them, your browser will alert you.</p>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div> <!--default form-->
+    </body>
+</html>

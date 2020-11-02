@@ -8,7 +8,7 @@ body {
 	display: grid;
 	width: 450;
 	justify-content: center;
-	align-content: center;
+	/*align-content: center;*/
 	margin: auto;
 	padding: 40px;
 }
