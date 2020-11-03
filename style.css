@@ -4,21 +4,30 @@
 	background-color: rgb(24, 26, 27);
 	color: rgb(232, 230, 227);
 }
+.navigation {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	margin: 10px 10px;
+}
+.navigation a {
+	margin: 0px 20px;
+}
 body {
 	display: grid;
 	width: 450;
 	justify-content: center;
-	/*align-content: center;*/
 	margin: auto;
 	padding: 40px;
 }
 a {
 	color: rgb(0,213,255);
 }
-header {
+.title {
 	text-align: center;
 }
-header h1 {
+.title h1 {
 	font-size: 333%;
 }
 .links {
