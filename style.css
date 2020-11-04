@@ -5,8 +5,8 @@
 	color: rgb(232, 230, 227);
 }
 .navigation {
-	width: 100%;
-	position: fixed;
+	width: 99%;
+	position: relative;
 	top: 0px;
 	left: 0px;
 	margin: 10px 10px;
@@ -14,18 +14,19 @@
 .navigation a {
 	margin: 0px 20px;
 }
-body {
+.grid {
 	display: grid;
-	width: 450;
+	width: 600;
 	justify-content: center;
 	margin: auto;
-	padding: 40px;
+	padding: 0px 0px 40px 0px;
 }
 a {
 	color: rgb(0,213,255);
 }
 .title {
 	text-align: center;
+	width: 100%;
 }
 .title h1 {
 	font-size: 333%;
