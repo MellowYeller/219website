@@ -9,6 +9,7 @@ if (!filter_input(INPUT_POST, 'fname')) {
     <head>
         <title>MySQL Form</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="simpleform.css">
     </head>
     <body>
         <div class="grid">
@@ -16,10 +17,10 @@ if (!filter_input(INPUT_POST, 'fname')) {
                 <a href="/">Main Page</a>
                 <a href="index.html">Back</a>
             </div> <!--navigation-->
-            <div class="SQLform">
+            <div class="form">
                 <form action="" name="form" method="POST">
                     <fieldset>
-                        <legend>MySQL Data Entry</legend>
+                        <legend><h2>MySQL Data Entry</h2></legend>
                         <p>Data entered here will be fed to a MySQL database. The entire table of entries will be printed on successful entry.</p>
                         <label for="fname">First name:</label> <br>
                         <input type="text" id="fname" name="fname" required>
@@ -65,7 +66,7 @@ if (!filter_input(INPUT_POST, 'fname')) {
     $res = $mysqli->query($query);
 
 ?>
-
+<!doctype html>
 <html>
     <head>
         <title>MySQL Form</title>
@@ -91,6 +92,7 @@ if (!filter_input(INPUT_POST, 'fname')) {
                         while ($row = $res->fetch_assoc()) {
                             printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>", $row["fname"], $row["lname"], $row["email"]);
                         }
+                        echo "<br>";
                     ?>
                 </table>
             </div> <!--main-->

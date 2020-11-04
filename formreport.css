@@ -8,3 +8,6 @@ td, th {
     text-align: center;
     padding: 3px 8px;
 }
+.main {
+    border: 1px solid rgb(232, 230, 227);
+}
