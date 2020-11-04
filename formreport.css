@@ -11,3 +11,6 @@ td, th {
 .main {
     border: 1px solid rgb(232, 230, 227);
 }
+.main p {
+    padding: 0px 8px;
+}
