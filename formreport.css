@@ -3,6 +3,12 @@ table {
     border: 2px solid rgb(232, 230, 227);
 
 }
+form {
+    margin-bottom: 0px;
+}
+legend h2 {
+    margin: 0px;
+}
 button {
     margin-left: 5px;
 }

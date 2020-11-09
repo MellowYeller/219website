@@ -14,16 +14,18 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	top: 0px;
 	left: 0px;
-	margin: 5px 5px;
+	margin: 5px 5px 20px 5px;
 }
 .navigation a {
 	margin: 0px 20px 0px 0px;
 }
 .grid {
-	display: grid;
-	width: 600;
+	display: block;
+	width: 600px;
 	justify-content: center;
-	margin: auto;
+	justify-self: center;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0px 0px 40px 0px;
 }
 a {

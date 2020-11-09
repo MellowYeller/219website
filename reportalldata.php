@@ -20,7 +20,7 @@
     <head>
         <title>MySQL Form</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="formreport.css">
+        <link rel="stylesheet" type="text/css" href="reportalldata.css">
     </head>
     <body>
         <div class="grid">
@@ -29,6 +29,7 @@
                 <a href="formreport.php">Back</a>
             </div> <!--navigation-->
             <div class="main">
+                <h2>Database Entries</h2>
                 <p>Below is a table of all data entered to the MySQL database so far.</p>
                 <table>
                     <tr>

@@ -9,7 +9,7 @@ if (!filter_input(INPUT_POST, 'fname')) {
     <head>
         <title>MySQL Form</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="simpleform.css">
+        <link rel="stylesheet" type="text/css" href="formreport.css">
     </head>
     <body>
         <div class="grid">
@@ -35,9 +35,6 @@ if (!filter_input(INPUT_POST, 'fname')) {
                         <a href="reportalldata.php"><button type="button">Show Table</button></a>
 
                     </form>
-                        <!--<form id="redirectform" action="reportalldata.php" name="redirect" method="POST">
-                            <input type="submit" value="Show Table">
-                        </form>-->
                 </fieldset>
             </div> <!--default form-->
         </div> <!--grid-->
