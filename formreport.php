@@ -32,10 +32,12 @@ if (!filter_input(INPUT_POST, 'fname')) {
                         <input type="email" id="email" name="email" required>
                         <br><br>
                         <input type="submit" value="Submit">
+                        <a href="reportalldata.php"><button type="button">Show Table</button></a>
+
                     </form>
-                        <form id="redirectform" action="reportalldata.php" name="redirect" method="POST">
+                        <!--<form id="redirectform" action="reportalldata.php" name="redirect" method="POST">
                             <input type="submit" value="Show Table">
-                        </form>
+                        </form>-->
                 </fieldset>
             </div> <!--default form-->
         </div> <!--grid-->
