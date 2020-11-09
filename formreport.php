@@ -18,8 +18,8 @@ if (!filter_input(INPUT_POST, 'fname')) {
                 <a href="index.html">Back</a>
             </div> <!--navigation-->
             <div class="form">
-                <form action="" name="form" method="POST">
-                    <fieldset>
+                <fieldset>
+                    <form action="" name="form" method="POST">
                         <legend><h2>MySQL Data Entry</h2></legend>
                         <p>Data entered here will be fed to a MySQL database. The entire table of entries will be printed on successful entry.</p>
                         <label for="fname">First name:</label> <br>
@@ -32,8 +32,11 @@ if (!filter_input(INPUT_POST, 'fname')) {
                         <input type="email" id="email" name="email" required>
                         <br><br>
                         <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
+                    </form>
+                        <form id="redirectform" action="reportalldata.php" name="redirect" method="POST">
+                            <input type="submit" value="Show Table">
+                        </form>
+                </fieldset>
             </div> <!--default form-->
         </div> <!--grid-->
     </body>
