@@ -8,14 +8,13 @@ if (!filter_input(INPUT_POST, 'fname')) {
 <html>
     <head>
         <title>MySQL Form</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="stylesheet" type="text/css" href="formreport.css">
     </head>
     <body>
         <div class="grid">
             <div class="navigation">
                 <a href="/">Main Page</a>
-                <a href="index.html">Back</a>
             </div> <!--navigation-->
             <div class="form">
                 <fieldset>
@@ -72,7 +71,7 @@ if (!filter_input(INPUT_POST, 'fname')) {
 <html>
     <head>
         <title>MySQL Form</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="stylesheet" type="text/css" href="formreport.css">
     </head>
     <body>

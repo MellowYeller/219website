@@ -19,7 +19,7 @@
 <html>
     <head>
         <title>MySQL Form</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="stylesheet" type="text/css" href="reportalldata.css">
     </head>
     <body>
