@@ -1,0 +1,15 @@
+.content {
+    padding-left: 7em;
+    padding-right: 7em;
+}
+.title {
+	text-align: center;
+    width: 100%;
+}
+.title h1 {
+	font-size: 333%;
+    margin-bottom: 0;
+}
+.links {
+	text-align: left;
+}
