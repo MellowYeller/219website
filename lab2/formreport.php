@@ -18,8 +18,8 @@ if (!filter_input(INPUT_POST, 'fname')) {
             </div> <!--navigation-->
             <div class="form">
                 <fieldset>
+                    <legend><h2>MySQL Data Entry</h2></legend>
                     <form action="" name="form" method="POST">
-                        <legend><h2>MySQL Data Entry</h2></legend>
                         <p>Data entered here will be fed to a MySQL database. The entire table of entries will be printed on successful entry.</p>
                         <label for="fname">First name:</label> <br>
                         <input type="text" id="fname" name="fname" required>
