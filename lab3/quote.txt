@@ -1,0 +1,4 @@
+<blockquote cite="https://www.goodreads.com/quotes/tag/programming">
+<p>“Programs must be written for people to read, and only incidentally for machines to execute.”</p>
+<footer>― Harold Abelson, <cite>Structure and Interpretation of Computer Programs</cite></footer>
+</blockquote>
