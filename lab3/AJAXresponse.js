@@ -36,3 +36,25 @@ function clearResponse() {
     document.getElementById("clear").hidden = true;
     document.getElementById("ajax").innerHTML = "";
 }
+function sendEmail() {
+    const xhttp = new XMLHttpRequest();
+    const email = document.getElementById("postEmail").value;
+
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            let message = "<p>";
+            if (this.status == 200) {
+                message += `The email "${email}" has been sent to the server.`;
+            }
+            else {
+                message += `There was an error sending the email "${email}". Code: ${this.status}`;
+            }
+            message += "</p>";
+            document.getElementById("postConfirm").innerHTML = message;
+        }
+    }
+    const params = `email=${email}`;
+    xhttp.open("POST", `emailEntry.php`);
+    xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhttp.send(params);
+}

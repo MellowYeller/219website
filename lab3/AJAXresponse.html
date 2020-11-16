@@ -12,13 +12,27 @@
                 <a href="/">Main Page</a>
             </div> <!--navigation-->
             <div class="main">
-                <fieldset>
-                    <legend><h2>AJAX Demonstration</h2></legend>
-                <p>Click the button below for a demonstration of the XMLHttpRequest objects ready states.</p>
-                <div class="ajax" id="ajax"></div>
-                <button type="button" id="button" onclick="showStateChange()">Begin</button>
-                <button type="button" id="clear" onclick="clearResponse()" hidden>Clear</button>
-                </fieldset>
+                <div class="readyState demo">
+                    <fieldset>
+                        <legend><h2>AJAX Demonstration</h2></legend>
+                        <p>Click the button below for a demonstration of the XMLHttpRequest objects ready states.</p>
+                        <div class="ajax" id="ajax"></div>
+                        <button type="button" id="button" onclick="showStateChange()">Begin</button>
+                        <button type="button" id="clear" onclick="clearResponse()" hidden>Clear</button>
+                    </fieldset>
+                </div> <!--readyStateDemo-->
+                <div class="post demo">
+                    <fieldset>
+                    <legend><h2>POST Demonstration</h2></legend>
+                    <form action="#" onsubmit="sendEmail(); return false">
+                        <p>This field uses AJAX POST method to send an email to the servers database.</p>
+                        <input type="email" id="postEmail" name="email" required>
+                        <br><br>
+                        <input type="submit" id="postButton" value="Send To Server">
+                        <div id="postConfirm"></div>
+                    </form>
+                    </fieldset>
+                </div>
             </div> <!--main-->
         </div> <!--grid-->
     </body>
