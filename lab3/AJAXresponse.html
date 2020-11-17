@@ -20,7 +20,7 @@
                         <button type="button" id="button" onclick="showStateChange()">Begin</button>
                         <button type="button" id="clear" onclick="clearResponse()" hidden>Clear</button>
                     </fieldset>
-                </div> <!--readyStateDemo-->
+                </div> <!--readyState demo-->
                 <div class="post demo">
                     <fieldset>
                     <legend><h2>POST Demonstration</h2></legend>
@@ -30,6 +30,18 @@
                         <br><br>
                         <input type="submit" id="postButton" value="Send To Server">
                         <div id="postConfirm"></div>
+                    </form>
+                    </fieldset>
+                </div> <!--post demo-->
+                <div class="get demo">
+                    <fieldset>
+                    <legend><h2>GET Demonstration</h2></legend>
+                    <form action="#" onsubmit="retrieveEmail(); return false">
+                        <p>This field uses AJAX GET method to check if an email is on the servers database.</p>
+                        <input type="email" id="getEmail" name="email" required>
+                        <br><br>
+                        <input type="submit" id="getButton" value="Check Server">
+                        <div id="getConfirm"></div>
                     </form>
                     </fieldset>
                 </div>

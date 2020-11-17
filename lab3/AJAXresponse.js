@@ -58,3 +58,23 @@ function sendEmail() {
     xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhttp.send(params);
 }
+function retrieveEmail() {
+    const xhttp = new XMLHttpRequest();
+    const email = document.getElementById("getEmail").value;
+    
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            let message = "<p>";
+            if (this.status == 200) {
+                message += this.response;
+            }
+            else {
+                message += `There was an error contacting the server. Code: ${this.status}`;
+            }
+            message += "</p>";
+            document.getElementById("getConfirm").innerHTML = message;
+        }
+    }
+    xhttp.open("GET", `emailEntry.php?email=${email}`);
+    xhttp.send();
+}
