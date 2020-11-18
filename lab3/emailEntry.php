@@ -45,9 +45,9 @@ else if (filter_input(INPUT_GET, "email")) {
         $res = $stmt->get_result();
         $row = $res->fetch_assoc();
         if (is_null($row)) {
-            echo "The email \"$email\" was not found on the server.";
+            echo "No, the email \"$email\" was not found on the server.";
         } else {
-            echo "The email \"".$row['email']."\" was found on the server!";
+            echo "Yes, the email \"".$row['email']."\" was found on the server!";
         }
     }
 }

@@ -1,3 +1,7 @@
+/*
+ * Mitchell Vivian
+ * 300202471
+ */
 function showStateChange() {
     document.getElementById("button").hidden = true;
     document.getElementById("clear").hidden = false;

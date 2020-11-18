@@ -24,7 +24,7 @@
                 <div class="post demo">
                     <fieldset>
                     <legend><h2>POST Demonstration</h2></legend>
-                    <form action="#" onsubmit="sendEmail(); return false">
+                    <form action="#" onsubmit="sendEmail(); return false"> <!--This will 'hijack' the form into using the JS method rather than regular GET or POST-->
                         <p>This field uses AJAX POST method to send an email to the servers database.</p>
                         <input type="email" id="postEmail" name="email" required>
                         <br><br>
@@ -44,7 +44,7 @@
                         <div id="getConfirm"></div>
                     </form>
                     </fieldset>
-                </div>
+                </div> <!--get demo-->
             </div> <!--main-->
         </div> <!--grid-->
     </body>
