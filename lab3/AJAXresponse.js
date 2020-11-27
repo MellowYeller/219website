@@ -40,6 +40,7 @@ function clearResponse() {
     document.getElementById("clear").hidden = true;
     document.getElementById("ajax").innerHTML = "";
 }
+
 function sendEmail() {
     const xhttp = new XMLHttpRequest();
     const email = document.getElementById("postEmail").value;
@@ -62,6 +63,7 @@ function sendEmail() {
     xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhttp.send(params);
 }
+
 function retrieveEmail() {
     const xhttp = new XMLHttpRequest();
     const email = document.getElementById("getEmail").value;
