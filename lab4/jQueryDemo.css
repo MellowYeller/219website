@@ -1,0 +1,8 @@
+.cat-picture {
+    width: 550px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: none;
+}

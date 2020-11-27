@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Noto Serif', serif;
 
 }
+legend h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 .navigation {
 	width: 99%;
 	position: relative;
