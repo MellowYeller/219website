@@ -17,11 +17,13 @@
                     <button id="next-button">Next</button>
                     <button id="prev-button">Previous</button>
                     <br>
-                    <img class="slide-pic img1" src="/res/slideshow/1.jpg" alt="">
-                    <img class="slide-pic img2" src="/res/slideshow/2.jpg" alt="">
-                    <img class="slide-pic img3" src="/res/slideshow/3.jpg" alt="">
-                    <img class="slide-pic img4" src="/res/slideshow/4.jpg" alt="">
-                    <img class="slide-pic img5" src="/res/slideshow/5.jpg" alt="">
+                    <div class="images-div">
+                        <img class="slide-pic img1" src="/res/slideshow/1.jpg" alt="">
+                        <img class="slide-pic img2" src="/res/slideshow/2.jpg" alt="">
+                        <img class="slide-pic img3" src="/res/slideshow/3.jpg" alt="">
+                        <img class="slide-pic img4" src="/res/slideshow/4.jpg" alt="">
+                        <img class="slide-pic img5" src="/res/slideshow/5.jpg" alt="">
+                    </div> <!--images-div-->
                 </fieldset>
             </div> <!--main-->
         </div> <!--grid-->
