@@ -1,0 +1,12 @@
+.img2, .img3, .img4, .img5 {
+    display: none;
+}
+#next-button {
+    float: right;
+}
+.images-div {
+    display: grid;
+    size: 100%;
+    grid-template-columns: 600px;
+    justify-items: center;
+}
