@@ -13,7 +13,9 @@
             <div class="main">
                 <fieldset>
                     <legend><h2>jQuery Slideshow</h2></legend>
-                    <p>Press the buttons below to cycle through some images.</p>
+                    <p>Press the buttons below to cycle through some images. This combines simple JavaScript logic 
+                        with the jQuery slideToggle() method.
+                    </p>
                     <button id="next-button">Next</button>
                     <button id="prev-button">Previous</button>
                     <br>
