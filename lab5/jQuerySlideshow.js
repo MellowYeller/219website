@@ -14,6 +14,12 @@ $(document).ready(() => {
         index = nextIndex;
     });
 
+    $('button').on('mouseover', event => {
+        $(event.currentTarget).addClass('hover', 200);
+    }).on('mouseleave', event => {
+        $(event.currentTarget).removeClass('hover', 200);
+    });
+
     const checkIndex = index => {
         if (index < 1) {
             index = numImages;

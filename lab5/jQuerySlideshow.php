@@ -16,6 +16,11 @@
                     <p>Press the buttons below to cycle through some images. This combines simple JavaScript logic 
                         with the jQuery slideToggle() method.
                     </p>
+                    <ul>
+                        <li>.slideToggle() method for changing pictures</li>
+                        <li>Click event handlers on both buttons</li>
+                        <li>Mouseover and mouseleave event handlers for button animations</li>
+                    </ul>
                     <button id="next-button">Next</button>
                     <button id="prev-button">Previous</button>
                     <br>
