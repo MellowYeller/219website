@@ -16,7 +16,7 @@ $(document).ready(() => {
 
     const checkIndex = index => {
         if (index < 1) {
-            index = 4;
+            index = numImages;
         } else if (index > numImages) {
             index = 1;
         }
