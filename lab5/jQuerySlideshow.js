@@ -15,9 +15,9 @@ $(document).ready(() => {
     });
 
     $('button').on('mouseover', event => {
-        $(event.currentTarget).addClass('hover', 200);
+        $(event.currentTarget).addClass('hover');
     }).on('mouseleave', event => {
-        $(event.currentTarget).removeClass('hover', 200);
+        $(event.currentTarget).removeClass('hover');
     });
 
     const checkIndex = index => {
