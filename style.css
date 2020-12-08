@@ -36,3 +36,6 @@ legend h2 {
 a {
 	color: rgb(0,213,255);
 }
+a:hover {
+	color: orange;
+}
