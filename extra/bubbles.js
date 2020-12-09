@@ -24,8 +24,8 @@ function PointCollection() {
             var dd = (dx * dx) + (dy * dy);
             var d = Math.sqrt(dd);
  
-            point.targetPos.x = d < 150 ? point.curPos.x - dx : point.originalPos.x;
-            point.targetPos.y = d < 150 ? point.curPos.y - dy : point.originalPos.y;
+            point.targetPos.x = d < 300 ? point.curPos.x - dx : point.originalPos.x;
+            point.targetPos.y = d < 300 ? point.curPos.y - dy : point.originalPos.y;
  
             point.update();
         }
@@ -301,7 +301,7 @@ var ctx;
 var pointCollection;
  
 document.rotationForce = 0.0;
-document.Friction = 0.85;
+document.Friction = 0.95;
 
 var white = [0, 0, 100];
 var black = [0, 0, 27];
